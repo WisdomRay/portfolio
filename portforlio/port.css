@@ -1,0 +1,1385 @@
+body {
+    background-color: #000;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+}
+
+.frame1x {
+    width: 30%;
+    height: inherit;
+    margin-top: 10%;
+    background-color: #f2f3f4;
+    position: fixed;
+    z-index: 1;
+}
+
+.frame1 {
+    width: 100%;
+    height: 520px;
+    border: 5px solid #646464;
+    margin-top: -10px;
+    box-shadow: -5px 1px 10px #646464;
+    background-color: #000;
+    z-index: 1;
+    margin: 10px 10px;
+}
+
+.frame2 {
+    width: 70%;
+    height: inherit;
+    position: absolute;
+    left: 30%;
+    background-color: #000;
+}
+
+.myprofilepic {
+    width: 100%;
+    height: 250px;
+    margin-top: 10%;
+}
+
+#pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px #646464;
+    margin: auto;
+    background-image: url(asset/IMG_20200906_122103_427.jpg);
+    transform: rotate(-17deg);
+    background-position: 40%, 50%;
+    background-position-y: 3px;
+    background-size: 180px;
+}
+
+.em {
+    width: 100%;
+    border: 0.5px solid #78cc6d;
+    position: absolute;
+    margin-top: -3px;
+}
+
+.myprofile {
+    width: 100%;
+    height: 100px;
+    margin-top: 3%;
+}
+
+#profile {
+    margin: 0px 5%;
+    height: 70px;
+    width: 90%;
+}
+
+#profile h2 {
+    text-align: center;
+    margin-top: 5px;
+    color: #646464;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    font-size: 30px;
+    color: #777777;
+    font-weight: 900;
+}
+
+#profile p {
+    text-align: center;
+    margin-top: -20px;
+    color: #78cc6d;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.social-link {
+    width: 40%;
+    height: 20px;
+    margin-top: -3%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+}
+
+#social {
+    height: 40px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #646464;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: 1000ms ease-out;
+}
+
+#social:hover {
+    background-color: #78cc6d;
+    color: #ffffff;
+    transition: 500ms ease-in-out;
+}
+
+.fa-facebook {
+    font-size: 20px;
+}
+
+.fa-linkedin {
+    font-size: 20px;
+}
+
+.fa-twitter {
+    font-size: 20px;
+}
+
+.reachme {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin: 7% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#reachme {
+    text-decoration: none;
+    color: #646464;
+    font-family: 'Ubuntu', sans-serif;
+    transition: color 1000ms ease-out;
+}
+
+#reachme:hover {
+    color: #78cc6d;
+    transition: color 0.5s ease-in;
+}
+
+.nav-wrapper {
+    width: 92%;
+    height: 70px;
+    margin-left: 4%;
+    position: sticky;
+    top: 0%;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav-bar {
+    width: 92%;
+    height: 70px;
+    margin-left: 4%;
+    position: sticky;
+    top: 0%;
+    background-color: #000;
+    display: none;
+}
+
+.nav2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0px;
+    left: 2%;
+    background-color: #78cc6d;
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-out;
+}
+
+.nav2:hover:after {
+    transform: scaleX(1);
+}
+
+.nav2 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    transition: 500ms ease-out 0.1s;
+}
+
+.home {
+    width: 20%;
+    height: 47px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #777777;
+    transition: color 500ms ease-out;
+}
+
+.home a:hover {
+    transition: color 500ms ease-out;
+    color: #78cc6d;
+}
+
+.resume1 {
+    width: 20%;
+    height: 47px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume1 a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #777777;
+    transition: color 500ms ease-out;
+}
+
+.resume1 a:hover {
+    color: #78cc6d;
+    transition: color 500ms ease-out;
+}
+
+.project1 {
+    width: 20%;
+    height: 47px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project1 a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #777777;
+    transition: color 500ms ease-out;
+}
+
+.project1 a:hover {
+    color: #78cc6d;
+    transition: color 500ms ease-out;
+}
+
+.contact1 {
+    width: 20%;
+    height: 47px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact1 a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #777777;
+    transition: color 500ms ease-out;
+}
+
+.contact1 a:hover {
+    color: #78cc6d;
+    transition: color 500ms cubic-bezier(.17, .67, .79, .4);
+}
+
+.about {
+    width: 90%;
+    height: 200px;
+    margin: 0% 5%;
+    position: relative;
+}
+
+.about h2 {
+    line-height: 0.2;
+    font-family: 'Ubuntu', sans-serif;
+    color: #646464;
+}
+
+.about span {
+    font-family: 'Ubuntu', sans-serif;
+    color: #78cc6d;
+}
+
+.about p {
+    line-height: 2;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #646464;
+    position: absolute;
+    top: 20%;
+}
+
+
+/* port2 */
+
+.resume-info {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 5%;
+}
+
+.resume-text {
+    width: 50%;
+    height: 50px;
+    color: #646464;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.resume-text span {
+    color: #78cc6d;
+}
+
+.resume-boxx {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0%;
+}
+
+.resume-boxxx {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#resume-box1 {
+    width: 40%;
+    height: 300px;
+    margin-top: 4%;
+}
+
+#resume-box1 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #78cc6d;
+}
+
+.rsbox {
+    width: 90%;
+    height: 200px;
+    margin-left: 10px;
+    border: 1px solid;
+    display: flex;
+    line-height: 1.5;
+}
+
+.rsbox1 {
+    width: 90%;
+    height: 150px;
+    margin: 10px 16px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.rsbox p {
+    display: flex;
+    line-height: 1;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.rsbox1 p {
+    display: flex;
+    line-height: 1;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #646464;
+    margin-left: 10px;
+}
+
+#rsbox {
+    width: 7%;
+    height: 30px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rsbox1 {
+    color: #646464;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fa-cog {
+    animation-name: cog;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: #646464;
+}
+
+@keyframes cog {
+    50% {
+        transform: rotate(90deg);
+    }
+}
+
+#rsbox1 {
+    width: 100%;
+    height: 150px;
+}
+
+#rsbox1 p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+#resume-box2 {
+    width: 40%;
+    height: 300px;
+    margin-top: 4%;
+}
+
+#resume-box2 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: #78cc6d;
+}
+
+#resume-box3 {
+    width: 40%;
+    height: 300px;
+    margin-top: 3%;
+}
+
+#resume-box3 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: #78cc6d;
+}
+
+#resume-box4 {
+    width: 40%;
+    height: 300px;
+    margin-top: 3%;
+}
+
+#resume-box4 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: #78cc6d;
+}
+
+.same {
+    display: flex;
+}
+
+.same p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+.project {
+    width: 90%;
+    height: 380px;
+    margin: 0% 5%;
+}
+
+.pro-box {
+    width: 90%;
+    height: 300px;
+    margin: 3% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prox {
+    width: 20%;
+    height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #646464;
+}
+
+.prox span {
+    color: #78cc6d;
+}
+
+.pro {
+    width: 30%;
+    height: 300px;
+    border: 1px solid #646464;
+    transition: 1000ms ease-in-out;
+}
+
+.pro1 {
+    width: 100%;
+    height: inherit;
+    background-image: url(asset/pic\ 1.png);
+    background-size: cover;
+}
+
+.pro2 {
+    width: 100%;
+    height: inherit;
+    background-image: url(asset/pic\ 2.png);
+    background-size: cover;
+}
+
+.pro3 {
+    width: 100%;
+    height: inherit;
+    background-image: url(asset/pic\ 3.png);
+    background-size: cover;
+}
+
+#pro {
+    background-color: #646464;
+    width: 100%;
+    height: inherit;
+    display: none;
+    opacity: 0.5;
+    transition: 1000ms ease-out;
+    position: relative;
+}
+
+.pro:hover #pro {
+    display: block;
+    transition: 1500ms ease-in;
+}
+
+.fa-bookmark {
+    color: #ffffff;
+}
+
+.contact {
+    width: 90%;
+    height: 400px;
+    margin: 0% 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.con {
+    width: 45%;
+    height: 250px;
+    margin-top: 60px;
+
+}
+
+.con h2 {
+    color: #646464;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+#emm {
+    color: #78cc6d;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.con1 {
+    width: 55%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    overflow: hidden;
+
+}
+
+#pcon {
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#pcon span {
+    margin-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #646464;
+}
+
+#con1 {
+    display: inline-block;
+    width: 100%;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+#xx {
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #78cc6d;
+    font-family: 'Ubuntu', sans-serif;
+ 
+}
+
+#xx1 {
+    width: 50%;
+    height: 122px;
+    outline: none;
+    border: 1px solid #78cc6d;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 55%;
+}
+
+.e4 {
+    background-color: #000;
+    width: 50%;
+    height: 40px;
+    margin: 30px 0px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #646464;
+    transition: 1000ms;
+}
+
+.e4 p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #646464;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    transition: 1000ms;
+}
+
+.e4:hover {
+    background-color: transparent;
+    border: 1px solid #78cc6d;
+    transition: 500ms;
+}
+
+.e4:hover p {
+    color: #78cc6d;
+}
+
+#con2 {
+    width: 50%;
+    height: 40px;
+    position: relative;
+    left: 35%;
+}
+
+#con2 p {
+    color: #646464;
+}
+
+.fa-envelope {
+    color: #78cc6d;
+    font-size: 15px;
+}
+
+.fa-phone {
+    color: #78cc6d;
+    font-size: 17px;
+}
+
+.fa-home {
+    color: #78cc6d;
+    font-size: 17px;
+}
+
+
+@media only screen and (max-width:768px) {
+    body {
+        background-color: #000;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .frame1x {
+        width: 90%;
+        height: 100%;
+        margin: 10% 5% !important;
+        background-color: #f2f3f4;
+        position: relative;
+        z-index: -1 !important;
+    }
+    .frame1 {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        background-color: #000;
+        margin: 0px 0px;
+        border: 1px solid #646464 !important;
+        box-shadow: 0px 1px 50px !important;
+    }
+    #profile{
+        border: 1px solid red;
+        margin-top: 0% !important ;
+    }
+    .social-link {
+        margin-top: 0%;
+    }
+    .frame2 {
+        width: 90%;
+        height: 2320px;
+        position: relative;
+        top: 100%;
+        left: 5%;
+        background-color: #000;
+        z-index: -1;
+    }
+    .myprofilepic {
+        margin-top: 5%;
+    }
+    #profile {
+        margin: -5% 0%;
+        width: 100%;
+        height: 100px;
+    }
+    #profile h2{
+        width: 100%;
+    }
+    .reachme{
+        width: 100%;        
+        margin: 5% auto !important;
+    }
+    .social-link{
+        width: 50% !important;        
+        margin: 0% auto !important;
+        height: 40px;
+    }
+    .em {
+        display: none;
+    }
+    .nav-wrapper {
+        display: none;
+    }
+    #nav-bar {
+        width: 100%;
+        height: 70px;
+        margin-left: 0%;
+        position: sticky;
+        top: 0%;
+        background-color: #000;
+        display: block;
+    }
+    .nav2 {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+        margin: 10px auto;
+        justify-content: space-evenly;
+        transition: 500ms ease-out 0.1s;
+    }
+    .about {
+        width: 90%;
+        height: 300px;
+        margin: 0px 6%;
+        position: relative;
+    }
+    .about p {
+        width: 100%;
+        line-height: 2;
+        font-family: 'Ubuntu', sans-serif;
+        color: #646464;
+        position: absolute;
+        top: 10%;
+        text-align: left;
+        
+    }
+    .about h2{
+        text-align: left !important;
+    }
+    .resume-info {
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: 2% 6%;
+
+    }
+    .resume-text h2{
+        text-align: left !important;
+    }
+    .rsbox1 {
+        width: 90%;
+        height: 150px;
+        margin: 0px 8px;
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+    }
+    .resume-boxxx {
+        margin-top: 12px;
+    }
+    .resume-boxx {
+        margin-top: 12px;
+    }
+    #resume-box1{
+        width: 50% !important;
+
+    }
+    #resume-box2{
+        width: 50% !important;
+    }
+    #resume-box3{
+        width: 50% !important;
+
+    }
+    #resume-box4{
+        width: 50% !important;
+    }
+    .project {
+        width: 90%;
+        height: 750px;
+        margin: 0% 6%;
+    }
+    .pro-box {
+        width: 100%;
+        height: 650px;
+        margin: 3% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .prox {
+        width: 50%;
+        height: 50px;
+        font-family: 'Ubuntu', sans-serif;
+        color: #646464;
+    }
+    .prox h2{
+        text-align: left !important;
+    }
+    .pro {
+        width: 100%;
+        height: 200px;
+        border: 1px solid #646464;
+        transition: 1000ms ease-in-out;
+    }
+    .contact {
+        width: 90%;
+        height: 700px;
+        margin: 0% 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .con {
+        width: 100%;
+        height: 250px;
+        margin-top: -5px;
+    }
+    .con h2{
+        text-align: left !important;
+    }
+    .con1 {
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+        /* margin-top: -50px !important; */
+    }
+    #pcon{
+        box-sizing: border-box;
+    }
+    #con1 {
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+    #xx {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+    #xx1 {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0px;
+        top: 28%;
+    }
+    .e4 {
+        margin: 150px auto !important;
+    }
+    #con2 {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        top: -1% !important;
+        left: 0%;
+    }
+    #con2 p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:360px){
+    body {
+        background-color: #000;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .nav-wrapper {
+        width: 102%;
+        height: 60px;
+        position: absolute;
+        top: -53%;
+        left: 0%;
+        background-color: #000;
+    }
+    .frame1x {
+        width: 90%;
+        height: 100% !important;
+    }
+    .frame1 {
+        width: 100%;
+        height: 100% !important;
+
+    }
+    .myprofile{
+        width: 100%;
+        border: 1px solid orange;
+    }
+    .reachme{
+        width: 100%;        
+        margin: 5% auto !important;
+    }
+    .social-link{
+        width: 100% !important;        
+        margin: 2% auto !important;
+        height: 40px;
+    }
+    
+    .about {
+        width: 100%;
+        height: 20% !important;
+        margin: 0px 0%;
+        position: relative;
+        display: flex !important;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+    .about p{
+        width: 100%;
+        height: 80%;
+        border: 1px solid blue;
+        box-sizing: content-box;
+        position: absolute;
+        top: 0%;
+    }
+    .resume-info {
+        width: 100%;
+        height: 500px;
+        margin: 30% 0% !important;
+        overflow: hidden;        
+    }
+    .resume-text{
+        width: 100%;
+    }
+    .project{
+        width: 100%;
+        margin: 30% 0%;
+    }
+    .prox{
+        width: 100%;
+    }
+    .pro-box{
+        overflow: hidden;
+    }
+    .contact{
+        width: 100%;
+        margin: 30% 0%;
+    }
+    .e4 {
+        margin: 120px auto !important;
+    }
+ 
+    #con2 {
+        width: 100%;
+        height: 50px;
+        position: static;
+        top: -4% !important;
+        left: 0%;
+    }
+    #xx1 {
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        left: 0px;
+        top: 51% !important;
+    }
+  
+}
+
+/* @media only screen and(max-width:768px){
+    body{
+        display: flex;
+        flex-direction: column !important;
+    }
+ 
+    .frame1x {
+        width: 90%;
+        height: 550px;
+        margin: 10% 5% !important;
+        background-color: #f2f3f4;
+        position: relative;
+        z-index: -1 !important;
+    }
+    .frame1 {
+        width: 100%;
+        height: 550px;
+        margin-top: 0px;
+        background-color: #000;
+        margin: 0px 0px;
+        border: 1px solid #646464 !important;
+        box-shadow: 0px 1px 50px !important;
+    }
+    #profile{
+        border: 1px solid red;
+        margin-top: 0% !important ;
+    }
+    .social-link {
+        margin-top: 0%;
+    }
+    .frame2 {
+        width: 90%;
+        height: 2320px;
+        position: relative;
+        top: 100%;
+        left: 5%;
+        background-color: #000;
+        z-index: -1;
+    }
+    .myprofilepic {
+        margin-top: 5%;
+    }
+    #profile {
+        margin: -5% 5%;
+    }
+    #profile h2{
+        width: 100%;
+    }
+    .reachme{
+        width: 100%;        
+        margin: 5% auto !important;
+    }
+    .social-link{
+        width: 50% !important;        
+        margin: 0% auto !important;
+        height: 40px;
+    }
+    .em {
+        display: none;
+    }
+    .nav-wrapper {
+        display: none;
+    }
+    #nav-bar {
+        width: 100%;
+        height: 70px;
+        margin-left: 0%;
+        position: sticky;
+        top: 0%;
+        background-color: #000;
+        display: block;
+    }
+    .nav2 {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+        margin: 10px auto;
+        justify-content: space-evenly;
+        transition: 500ms ease-out 0.1s;
+    }
+    .about {
+        width: 90%;
+        height: 300px;
+        margin: 0px 6%;
+        position: relative;
+    }
+    .about p {
+        width: 100%;
+        line-height: 2;
+        font-family: 'Ubuntu', sans-serif;
+        color: #646464;
+        position: absolute;
+        top: 10%;
+        text-align: left;
+        
+    }
+    .about h2{
+        text-align: left !important;
+    }
+    .resume-info {
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: 2% 6%;
+
+    }
+    .resume-text h2{
+        text-align: left !important;
+    }
+    .rsbox1 {
+        width: 90%;
+        height: 150px;
+        margin: 0px 8px;
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+    }
+    .resume-boxxx {
+        margin-top: 12px;
+    }
+    .resume-boxx {
+        margin-top: 12px;
+    }
+    #resume-box1{
+        width: 50% !important;
+
+    }
+    #resume-box2{
+        width: 50% !important;
+    }
+    #resume-box3{
+        width: 50% !important;
+
+    }
+    #resume-box4{
+        width: 50% !important;
+    }
+    .project {
+        width: 90%;
+        height: 750px;
+        margin: 0% 6%;
+    }
+    .pro-box {
+        width: 100%;
+        height: 650px;
+        margin: 3% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .prox {
+        width: 50%;
+        height: 50px;
+        font-family: 'Ubuntu', sans-serif;
+        color: #646464;
+    }
+    .prox h2{
+        text-align: left !important;
+    }
+    .pro {
+        width: 100%;
+        height: 200px;
+        border: 1px solid #646464;
+        transition: 1000ms ease-in-out;
+    }
+    .contact {
+        width: 90%;
+        height: 700px;
+        margin: 0% 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .con {
+        width: 100%;
+        height: 250px;
+        margin-top: -5px;
+    }
+    .con h2{
+        text-align: left !important;
+    }
+    .con1 {
+        width: 100%;
+        height: 400px;
+        margin-top: -50px !important;
+    }
+    #con1 {
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+    #xx {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+    #xx1 {
+        width: 100%;
+        height: 100px;
+        margin-top: 28% !important;
+        position: absolute;
+        left: 0px;
+    }
+    .e4 {
+        margin: 150px auto !important;
+    }
+    #con2 {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        top: -1% !important;
+        left: 0%;
+    }
+    #con2 p {
+        text-align: center;
+    }
+} */
+/* @media only screen and (max-width:900px) {
+    body {
+        background-color: #000;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+    }
+    
+    #profile h2{
+        width: 100%;
+    }
+    #profile{
+        width: 100%;
+        margin:12% 0% ;
+        height: 120px;
+    }
+    .reachme{
+        width: 100%;        
+        margin: 0% auto;
+    }
+    .social-link{
+        width: 100%;        
+        margin: 2% auto;
+        height: 40px;
+    }
+    .nav-wrapper {
+        width: 92%;
+        height: 60px;
+        margin-left: 5.5%;
+        position: sticky;
+    }
+    .about {
+        width: 90%;
+        height: 300px;
+        margin: 0px 7%;
+        position: relative;
+    }
+    .about h2 {
+        color: #646464;
+        text-align: center;
+    }
+    .about p {
+        text-align: left;
+    }
+    .resume-info{
+        margin: 0px 7%;
+    }
+    .resume-text {
+        text-align: center; 
+        width: 100% ;
+        margin-bottom: 15px;
+    }
+    .resume-boxx{
+        display: flex;
+        justify-content: space-between;
+    }
+    .resume-boxxx{
+        display: flex;
+        justify-content: space-between;
+    }
+    #resume-box1{
+        height: 180px;
+        margin-top: 0%;
+    }
+    #resume-box2{
+        height: 180px;
+        margin-top: 0%;
+    }
+    #resume-box3{
+        height: 180px;
+        margin-top: 0%;
+    }
+    #resume-box4{
+      
+        height: 180px;
+        margin-top: 0%;
+    }
+    .project{
+        margin: 0% 7%;
+        overflow: hidden;
+    }
+    .prox{
+        width: 100%;
+        text-align: center;
+    }
+   
+    .contact {
+        width: 90%;
+        height: 700px;
+        margin: 0% 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .con {
+        width: 100%;
+        height: 250px;
+        margin-top: -5px;
+    }
+    .con h2{
+        text-align: center;
+    }
+    .con1 {
+        width: 100%;
+        height: 400px;
+        margin-top: -17px;
+    }
+    #con1 {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+    #xx {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+    #xx1 {
+        width: 100%;
+        height: 100px;
+        margin-top: 36.5% !important;
+        position: absolute;
+        left: 0px;
+    }
+    .e4 {
+        margin: 155px auto;
+    }
+    #con2 {
+        width: 50%;
+        height: 50px;
+        position: relative;
+        top: 1%;
+        left:27%;
+    }
+    #con2 p {
+        text-align: center;
+    }
+} */
