@@ -5,6 +5,13 @@ body {
     width: 100%;
     display: flex;
 }
+.all{
+    background-color: #000;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+}
 
 .frame1x {
     width: 30%;
@@ -170,7 +177,8 @@ body {
     position: sticky;
     top: 0%;
     background-color: #000;
-    display: none;
+    visibility: hidden;    
+    z-index: 1;
 }
 
 .nav2:after {
@@ -699,9 +707,19 @@ body {
         display: flex;
         flex-direction: column;
     }
+    .all{
+        background-color: #000;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 1 !important;
+
+    }
     .frame1x {
         width: 90%;
-        height: 100%;
+        height: 0%;
         margin: 10% 5% !important;
         background-color: #f2f3f4;
         position: relative;
@@ -709,20 +727,15 @@ body {
     }
     .frame1 {
         width: 100%;
-        height: 100%;
+        height: 0%;
         margin-top: 0px;
         background-color: #000;
         margin: 0px 0px;
         border: 1px solid #646464 !important;
         box-shadow: 0px 1px 50px !important;
     }
-    #profile{
-        border: 1px solid red;
-        margin-top: 0% !important ;
-    }
-    .social-link {
-        margin-top: 0%;
-    }
+  
+   
     .frame2 {
         width: 90%;
         height: 2320px;
@@ -735,22 +748,22 @@ body {
     .myprofilepic {
         margin-top: 5%;
     }
+  
     #profile {
-        margin: -5% 0%;
-        width: 100%;
-        height: 100px;
+        width: 100%;        
+        height:50px !important;
+        margin-top: -20px !important;
     }
-    #profile h2{
-        width: 100%;
-    }
+ 
     .reachme{
         width: 100%;        
-        margin: 5% auto !important;
+        margin: 10% auto !important;
     }
     .social-link{
-        width: 50% !important;        
-        margin: 0% auto !important;
+        width: 70% !important;        
         height: 40px;
+        margin-left: 15% !important;
+        margin-top: -30px !important;
     }
     .em {
         display: none;
@@ -765,7 +778,8 @@ body {
         position: sticky;
         top: 0%;
         background-color: #000;
-        display: block;
+        visibility: visible;        
+        z-index: 1 ;
     }
     .nav2 {
         width: 100%;
@@ -949,18 +963,24 @@ body {
     }
     .myprofile{
         width: 100%;
-        border: 1px solid orange;
+        margin: 0%;
     }
     .reachme{
         width: 100%;        
         margin: 5% auto !important;
     }
-    .social-link{
+    /* .social-link{
         width: 100% !important;        
         margin: 2% auto !important;
         height: 40px;
+    } */
+    .social-link{
+        width: 70% !important;        
+        height: 40px;
+        border: 1px solid blue;
+        margin-left: 15% !important;
+        margin-top: -30px !important;
     }
-    
     .about {
         width: 100%;
         height: 20% !important;
@@ -968,15 +988,10 @@ body {
         position: relative;
         display: flex !important;
         box-sizing: border-box;
-        border: 1px solid red;
     }
     .about p{
         width: 100%;
         height: 80%;
-        border: 1px solid blue;
-        box-sizing: content-box;
-        position: absolute;
-        top: 0%;
     }
     .resume-info {
         width: 100%;
@@ -1243,7 +1258,7 @@ body {
         text-align: center;
     }
 } */
-/* @media only screen and (max-width:900px) {
+@media only screen and (max-width:900px) {
     body {
         background-color: #000;
         padding: 0;
@@ -1254,6 +1269,7 @@ body {
     
     #profile h2{
         width: 100%;
+        font-size: 25px !important ;
     }
     #profile{
         width: 100%;
@@ -1262,12 +1278,15 @@ body {
     }
     .reachme{
         width: 100%;        
-        margin: 0% auto;
+        margin: 8% 0%;
     }
     .social-link{
-        width: 100%;        
-        margin: 2% auto;
+        width: 100% ;        
+        margin: -5% 0% ;
         height: 40px;
+    }
+    .nav-bar{
+        z-index: 1;
     }
     .nav-wrapper {
         width: 92%;
@@ -1365,7 +1384,7 @@ body {
     #xx1 {
         width: 100%;
         height: 100px;
-        margin-top: 36.5% !important;
+        top: 51% !important;
         position: absolute;
         left: 0px;
     }
@@ -1382,4 +1401,4 @@ body {
     #con2 p {
         text-align: center;
     }
-} */
+}
